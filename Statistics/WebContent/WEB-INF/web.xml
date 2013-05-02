@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Statistics</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>StatisticsCalculatorServlet</display-name>
+    <servlet-name>StatisticsCalculatorServlet</servlet-name>
+    <servlet-class>com.statistics.servlet.StatisticsCalculatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatisticsCalculatorServlet</servlet-name>
+    <url-pattern>/calculateStats</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AssessmentServlet</display-name>
+    <servlet-name>AssessmentServlet</servlet-name>
+    <servlet-class>com.assesment.servlet.AssessmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AssessmentServlet</servlet-name>
+    <url-pattern>/assessment</url-pattern>
+  </servlet-mapping>
+</web-app>
